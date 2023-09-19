@@ -26,6 +26,7 @@ function validaNumero() {
 
 
 function adicionaLinha() {
+    if (numeroValido === true){
         if (nomes.includes(inputNome.value)) {
             alert(`Este nome já está incluído na lista`);
         } else if (numeros.includes(inputNumero.value)) {
@@ -46,6 +47,9 @@ function adicionaLinha() {
 
             linhas += linha;
         }
+        }else{
+        console.log(`coloque um numero de telefone valido`)
+    }
     inputNome.value = '';
     inputNumero.value = '';
 }
