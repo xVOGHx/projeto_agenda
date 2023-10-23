@@ -2,7 +2,7 @@ const form = document.getElementById('form');
 const nomes = [];
 const numeros = [];
 const inputNome = document.getElementById ("add-nome");
-const inputNumero = document.getElementById ("add-numero");
+const inputNumero = document.getElementById ("addNumero");
 let numeroValido = false;
 
 let linhas = '';
@@ -60,3 +60,6 @@ function atualizaTabela(){
     corpoTabela.innerHTML = linhas;
 }
 
+$(document).ready(function(){
+    $('#addNumero').mask('000000000')
+})
